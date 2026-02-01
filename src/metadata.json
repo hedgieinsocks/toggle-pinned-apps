@@ -1,0 +1,8 @@
+{
+  "name": "Toggle Pinned Apps",
+  "description": "Add keybindings for toggling pinned applications",
+  "uuid": "toggle-pinned-apps@hedgie.tech",
+  "shell-version": ["49", "50"],
+  "url": "https://github.com/hedgieinsocks/toggle-pinned-apps",
+  "settings-schema": "org.gnome.shell.extensions.toggle-pinned-apps"
+}

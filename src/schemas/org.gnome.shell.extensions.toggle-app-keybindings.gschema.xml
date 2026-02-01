@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+  <schema
+        id="org.gnome.shell.extensions.toggle-pinned-apps"
+        path="/org/gnome/shell/extensions/toggle-pinned-apps/"
+    >
+    <key name="toggle-application-1" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;1"]</default>
+      <summary>Toggle application 1</summary>
+    </key>
+    <key name="toggle-application-2" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;2"]</default>
+      <summary>Toggle application 2</summary>
+    </key>
+    <key name="toggle-application-3" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;3"]</default>
+      <summary>Toggle application 3</summary>
+    </key>
+    <key name="toggle-application-4" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;4"]</default>
+      <summary>Toggle application 4</summary>
+    </key>
+    <key name="toggle-application-5" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;5"]</default>
+      <summary>Toggle application 5</summary>
+    </key>
+    <key name="toggle-application-6" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;6"]</default>
+      <summary>Toggle application 6</summary>
+    </key>
+    <key name="toggle-application-7" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;7"]</default>
+      <summary>Toggle application 7</summary>
+    </key>
+    <key name="toggle-application-8" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;8"]</default>
+      <summary>Toggle application 8</summary>
+    </key>
+    <key name="toggle-application-9" type="as">
+      <default>["&lt;Super&gt;&lt;Alt&gt;9"]</default>
+      <summary>Toggle application 9</summary>
+    </key>
+  </schema>
+</schemalist>
