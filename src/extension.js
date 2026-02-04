@@ -8,29 +8,20 @@ export default class TogglePinnedAppsExtension extends Extension {
   _toggleApplication(display, window, event, binding) {
     const [, , target] = binding.get_name().split("-");
     const app = Main.wm._getNthFavoriteApp(target - 1);
-    if (!app) return;
-
-    const appWindows = app.get_windows();
-
-    if (!appWindows.length || Main.overview.visible) {
-      Main.overview.hide();
-      app.activate();
-      return;
+    if (app) {
+      const appWindows = app.get_windows();
+      const focusWindow = display.get_focus_window();
+      if (
+        Main.overview.visible ||
+        !appWindows.length ||
+        !appWindows.includes(focusWindow)
+      ) {
+        Main.overview.hide();
+        app.activate();
+      } else {
+        focusWindow.minimize();
+      }
     }
-
-    const focusedWindow = display.get_focus_window();
-
-    if (!appWindows.includes(focusedWindow)) {
-      app.activate();
-      return;
-    }
-
-    if (appWindows.length > 1) {
-      Main.activateWindow(appWindows.at(-1));
-      return;
-    }
-
-    focusedWindow.minimize();
   }
 
   enable() {
